@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+@media only screen and (max-width: 440px) {
+  a {
+    font-size: 16px;
+  }
+}

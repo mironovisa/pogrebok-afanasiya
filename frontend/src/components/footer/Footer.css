@@ -1,0 +1,66 @@
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  background-color: transparent;
+  padding-bottom: 25px;
+  position: static;
+  bottom: 10px;
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(215, 250, 255, 0.8884803921568627) 0%,
+    rgba(235, 91, 63, 0.06214985994397759) 96%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(215, 250, 255, 0.8884803921568627) 0%,
+    rgba(235, 91, 63, 0.06214985994397759) 96%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(215, 250, 255, 0.8884803921568627) 0%,
+    rgba(235, 91, 63, 0.06214985994397759) 96%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eb5b3f",GradientType=1);
+}
+.footer-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column-header {
+  font-size: 26px;
+  font-weight: bold;
+  
+}
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .footer-row {
+    flex-direction: column;
+  }
+}

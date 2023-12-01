@@ -1,0 +1,270 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container {
+  width: 90%;
+  display: flex;
+
+  align-items: center;
+}
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.logo-container img {
+  width: 300px;
+  object-fit: cover;
+}
+.header-link {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-link:hover {
+  background-color: bisque;
+}
+.header-links-container {
+  padding: 25px;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-link {
+  white-space: nowrap;
+}
+.header-links-container > * {
+  position: relative;
+  padding: 15px;
+}
+.catalog-link::before {
+  content: "";
+  position: absolute;
+  left: 65px;
+  bottom: 0px;
+  width: 90px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+.dostavka-link::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+  width: 75px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+.oplata-link::before {
+  content: "";
+  position: absolute;
+  left: 43px;
+  bottom: 0px;
+  width: 60px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+.contacts-link::before {
+  content: "";
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 150px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+.chat-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.chat-buttons > * {
+  display: flex;
+}
+.lets-chat-header-links {
+  width: 100%;
+}
+.telegram-chat-button {
+  background-color: #229ed9;
+  display: flex;
+  border: none;
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  padding: 9px;
+}
+.whatsapp-chat-button {
+  display: flex;
+  background-color: #25d366;
+  border: none;
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  padding: 9px;
+}
+.phone-call-button {
+  display: flex;
+  background: rgba(235, 91, 63, 0.5);
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  padding: 9px;
+  border: none;
+}
+
+@media only screen and (max-width: 440px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .header-links-container {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Bad Script", cursive;
+  }
+  .header-links-container > * {
+    position: relative;
+  }
+  .catalog-link::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 0px;
+    width: 80px;
+    height: 4px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+  }
+  .dostavka-link::before {
+    content: "";
+    position: absolute;
+    left: 47px;
+    bottom: 0px;
+    width: 80px;
+    height: 4px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+  }
+  .oplata-link::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: 0px;
+    width: 70px;
+    height: 4px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+  }
+  .contacts-link::before {
+    content: "";
+    position: absolute;
+    left: 65px;
+    bottom: 0px;
+    width: 100px;
+    height: 4px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+  }
+  .chat-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .chat-buttons > * {
+    display: flex;
+  }
+  .lets-chat-header-links {
+    width: 100%;
+  }
+  .telegram-chat-button {
+    background-color: #229ed9;
+    display: flex;
+    border: none;
+    align-items: center;
+    font-family: "Bad Script", cursive;
+    font-weight: 300;
+    color: white;
+    border-radius: 30px;
+    gap: 7px;
+  }
+  .whatsapp-chat-button {
+    display: flex;
+    background-color: #25d366;
+    border: none;
+    align-items: center;
+    font-family: "Bad Script", cursive;
+    font-weight: 300;
+    color: white;
+    border-radius: 30px;
+    gap: 7px;
+  }
+  .phone-call-button {
+    display: flex;
+    background: rgba(235, 91, 63, 0.5);
+    align-items: center;
+    font-family: "Bad Script", cursive;
+    font-weight: 300;
+    color: white;
+    border-radius: 30px;
+    padding: 9px;
+    border: none;
+    gap: 7px;
+  }
+  .catalog-link {
+    display: flex;
+  }
+}

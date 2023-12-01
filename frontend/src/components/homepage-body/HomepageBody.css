@@ -1,0 +1,62 @@
+.homepage-body {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 0.28904061624649857) 0%,
+    rgba(235, 91, 63, 0.07335434173669464) 96%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 0.28904061624649857) 0%,
+    rgba(235, 91, 63, 0.07335434173669464) 96%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 0.28904061624649857) 0%,
+    rgba(235, 91, 63, 0.07335434173669464) 96%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eb5b3f",GradientType=1);
+}
+
+.homepagebody-container {
+  width: 90%;
+  display: flex;
+}
+
+.sidebar-container {
+  flex: 1;
+}
+
+.mainframe-container {
+  flex: 2;
+}
+
+.homepagebody-text {
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+  text-align: justify;
+}
+.sorting-homepage option {
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sorting-homepage select {
+  margin-top: 25px;
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 440px) {
+  .sidebar-container {
+    display: none;
+  }
+}

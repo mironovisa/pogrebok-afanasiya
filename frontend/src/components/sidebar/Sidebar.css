@@ -1,0 +1,62 @@
+.sidebar-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 50px solid red;
+  border-bottom: 15px solid transparent;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 50px solid red;
+  border-bottom: 15px solid transparent;
+}
+
+.sidebar-header {
+  width: 150px;
+  height: 30px;
+  background: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sidebar-categories {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-list-element-icon {
+  height: 75px;
+}
+.sidebar-divst-element {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+  text-align: right;
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-divst-element:hover {
+  background-color: bisque;
+}
+@media only screen and (max-width: 440px) {
+    .sidebar{
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+.item-card {
+  margin-top: 25px;
+  box-shadow: 8px 9px 4px 4px rgba(0, 0, 0, 0.2);
+  border: 6px solid beige;
+}
+.item-card-container {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.item-card-container img {
+  width: 100%;
+}
+.item-name {
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+  text-align: justify;
+  font-weight: bold;
+}
+.item-desc {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.item-card-container span {
+  font-weight: bold;
+}
+
+.order-item-btn {
+  font-weight: bold;
+  font-family: "Caveat";
+  font-size: 25px;
+  border: none;
+  color: white;
+  background: rgba(238, 111, 87, 0.5);
+  height: 30px;
+
+}
+.order-item-btn:hover {
+    background: rgba(241, 55, 18, 0.5);
+}
+
+@media only screen and (max-width: 440px) {
+  .order-item-btn {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+}
